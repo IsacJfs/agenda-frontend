@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&family=Shadows+Into+Light&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img id="notes-icone" src="./imagens/notes.png" alt="icone agenda">
+            <h1>Agenda Telefônica</h1>
+        </div>
+    </header>
+    <div class="container">
+        <table id="contact-table">
+            <thead>
+                <tr>
+                    <th id="person-icone">Nome</th>
+                    <th id="phone-icone">Telefone</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="container">
+        <form id="contact-form">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="phone">Telefone:</label><br>
+            <input type="tel" id="phone" minlength="10" name="phone" required><br>
+            <input type="submit" value="Add Contact">
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
